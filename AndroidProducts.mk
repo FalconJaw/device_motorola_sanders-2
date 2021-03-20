@@ -14,7 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/wave_sanders.mk
+	$(LOCAL_DIR)/bliss_sanders.mk
 
 COMMON_LUNCH_CHOICES := \
-	wave_sanders-userdebug
+	bliss_sanders-eng

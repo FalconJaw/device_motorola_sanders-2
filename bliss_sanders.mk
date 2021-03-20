@@ -22,26 +22,32 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 # Inherit from potter device
 $(call inherit-product, device/motorola/sanders/device.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/wave/config/common.mk)
+# Inherit some common Pixys stuff..
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 # Boot animation
-TARGET_SCREEN_WIDTH := 1080
-TARGET_SCREEN_HEIGHT := 1920
 TARGET_BOOT_ANIMATION_RES := 1080
+
+# Gapps Config
+#TARGET_GAPPS_ARCH := arm64
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sanders
-PRODUCT_NAME := wave_sanders
+PRODUCT_NAME := bliss_sanders
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_MODEL := Moto G (5S) Plus
 
+PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="Moto G (5S) Plus" \
-    PRIVATE_BUILD_DESC="sanders-user 8.1.0 OPS28.65-36-14 63857 release-keys"
+    PRODUCT_NAME="bliss_sanders" \
+    TARGET_DEVICE="sanders" \
+    PRIVATE_BUILD_DESC="sanders-user 8.1.0 OPS28.65-36 9fea release-keys"
 
 # for specific
 $(call inherit-product, vendor/motorola/sanders/sanders-vendor.mk)
 
-BUILD_FINGERPRINT := google/sunfish/sunfish:11/RQ2A.210305.006/7119741:user/release-keys
+# FINGERPRINT
+BUILD_FINGERPRINT := google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys
+VENDOR_BUILD_FINGERPRINT := google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys

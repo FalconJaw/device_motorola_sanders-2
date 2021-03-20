@@ -83,7 +83,7 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CONFIG := sanders_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/sanders
-KERNEL_TOOLCHAIN_PATH := $(TOP)/prebuilts/clang/host/linux-x86/clang-r370808/bin/clang
+#KERNEL_TOOLCHAIN_PATH := $(TOP)/prebuilts/clang/host/linux-x86/clang-r370808/bin/clang
 
 # APEX image
 DEXPREOPT_GENERATE_APEX_IMAGE := true
@@ -159,7 +159,7 @@ BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 BOARD_NO_CHARGER_LED := true
 
 # Crypto
-TARGET_HW_DISK_ENCRYPTION := true
+#TARGET_HW_DISK_ENCRYPTION := true
 
 # Enable dexpreopt to speed boot time
 WITH_DEXPREOPT := true
