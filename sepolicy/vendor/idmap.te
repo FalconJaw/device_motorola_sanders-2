@@ -1,3 +1,0 @@
-typeattribute idmap system_executes_vendor_violators;
-
-allow idmap vendor_file:file { getattr read };

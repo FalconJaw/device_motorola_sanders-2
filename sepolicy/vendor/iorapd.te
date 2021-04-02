@@ -1,3 +1,0 @@
-typeattribute iorapd system_executes_vendor_violators;
-
-allow iorapd vendor_file:file { getattr read };

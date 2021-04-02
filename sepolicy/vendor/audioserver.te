@@ -1,3 +1,0 @@
-typeattribute audioserver system_executes_vendor_violators;
-
-allow audioserver vendor_file:file { getattr read };

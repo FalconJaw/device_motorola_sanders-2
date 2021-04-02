@@ -14,7 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/bliss_sanders.mk
+	$(LOCAL_DIR)/cesium_sanders.mk
 
 COMMON_LUNCH_CHOICES := \
-	bliss_sanders-eng
+	cesium_sanders-eng

@@ -1,3 +1,0 @@
-typeattribute vdc system_executes_vendor_violators;
-
-allow vdc vendor_file:file { getattr read };

@@ -1,3 +1,0 @@
-typeattribute netutils_wrapper system_executes_vendor_violators;
-
-allow netutils_wrapper vendor_file:file { getattr read };

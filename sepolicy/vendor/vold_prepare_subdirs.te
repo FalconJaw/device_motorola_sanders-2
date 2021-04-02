@@ -1,3 +1,0 @@
-typeattribute vold_prepare_subdirs system_executes_vendor_violators;
-
-allow vold_prepare_subdirs vendor_file:file { getattr read };

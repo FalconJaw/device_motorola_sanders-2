@@ -1,3 +1,0 @@
-typeattribute incidentd system_executes_vendor_violators;
-
-allow incidentd vendor_file:file { getattr read };

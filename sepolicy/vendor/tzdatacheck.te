@@ -1,3 +1,0 @@
-typeattribute tzdatacheck system_executes_vendor_violators;
-
-allow tzdatacheck vendor_file:file { getattr read };

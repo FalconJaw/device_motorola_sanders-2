@@ -1,3 +1,0 @@
-typeattribute drmserver system_executes_vendor_violators;
-
-allow drmserver vendor_file:file { getattr read };

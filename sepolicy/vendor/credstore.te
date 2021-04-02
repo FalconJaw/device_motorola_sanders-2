@@ -1,3 +1,0 @@
-typeattribute credstore system_executes_vendor_violators;
-
-allow credstore vendor_file:file { getattr read };

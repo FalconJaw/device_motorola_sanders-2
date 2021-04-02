@@ -1,3 +1,0 @@
-typeattribute traced system_executes_vendor_violators;
-
-allow traced vendor_file:file { getattr read };
